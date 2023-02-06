@@ -56,20 +56,47 @@ li {
 }
 
 .header-subtext {
-    color: white;
+    color: rgb(144, 144, 144);
     font-size: 1.2rem;
     margin-bottom: 1.6rem;
 }
 
+
+/*** Link Icons ***/
+
 .external-links {
     display: flex;
-    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.external-links li {
+    margin-left: 0.6rem;
 }
 
 .icon {
     color: white;
-    width: 3.2rem;
-    height: 3.2rem;
+    transition: all 0.3s;
+    font-size: 3.2rem;
+}
+
+.icon:hover {
+    width: 4.4rem;
+    height: 4.4rem;
+    cursor: pointer;
+}
+
+.icon-github:hover {
+    color: #6e5494;
+}
+
+.icon-linkedin:hover {
+    color: #0072b1 !important;
+}
+
+.icon-email:hover {
+    color: red;
 }
 
 @media (min-width: 1000px) {
